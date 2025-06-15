@@ -10,8 +10,8 @@ let package = Package(
         .executable(name: "dependency-graph", targets: ["Main"])
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-argument-parser", from: "1.2.0"),
-        .package(url: "https://github.com/tuist/XcodeProj.git", .upToNextMajor(from: "8.8.0"))
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "1.5.1"),
+        .package(url: "https://github.com/tuist/XcodeProj.git", .upToNextMajor(from: "9.4.0"))
     ],
     targets: [
         .executableTarget(name: "Main", dependencies: [

@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tadija/AEXML.git",
       "state" : {
-        "revision" : "38f7d00b23ecd891e1ee656fa6aeebd6ba04ecc3",
-        "version" : "4.6.1"
+        "revision" : "db806756c989760b35108146381535aec231092b",
+        "version" : "4.7.0"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-argument-parser",
       "state" : {
-        "revision" : "fddd1c00396eed152c45a46bea9f47b98e59301d",
-        "version" : "1.2.0"
+        "revision" : "011f0c765fb46d9cac61bca19be0527e99c98c8b",
+        "version" : "1.5.1"
       }
     },
     {
@@ -41,8 +41,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tuist/XcodeProj.git",
       "state" : {
-        "revision" : "b6de1bfe021b861c94e7c83821b595083f74b997",
-        "version" : "8.8.0"
+        "revision" : "4488984883071307a9136251e7ccf06a41b6258d",
+        "version" : "9.4.2"
       }
     }
   ],

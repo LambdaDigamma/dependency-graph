@@ -29,8 +29,8 @@ public struct XcodeProjectParserLive: XcodeProjectParser {
 private extension XcodeProjectParserLive {
     func targets(in project: XcodeProj) -> [XcodeProject.Target] {
         return project.pbxproj.nativeTargets.map { target in
-            let packageProductDependencies = target.packageProductDependencies.map(\.productName)
-            return .init(name: target.name, packageProductDependencies: packageProductDependencies)
+            let packageProductDependencies = target.packageProductDependencies?.map(\.productName)
+            return .init(name: target.name, packageProductDependencies: packageProductDependencies ?? [])
         }
     }
 
@@ -42,7 +42,7 @@ private extension XcodeProjectParserLive {
         }
         var swiftPackages: [IntermediateRemoteSwiftPackage] = []
         for target in project.pbxproj.nativeTargets {
-            for dependency in target.packageProductDependencies {
+            for dependency in target.packageProductDependencies ?? [] {
                 guard let package = dependency.package, let packageName = package.name else {
                     continue
                 }
